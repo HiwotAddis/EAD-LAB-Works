@@ -1,3 +1,5 @@
+//Hiwot Addis
+//UGR/3763/14
 package com.example.onlinebookstore;
 
 import lombok.Getter;
@@ -8,6 +10,7 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 public class TestLombok {
+
     private String name;
     private int age;
 
@@ -18,5 +21,4 @@ public class TestLombok {
         System.out.println("Name: " + test.getName());
         System.out.println("Age: " + test.getAge());
     }
-}
 }

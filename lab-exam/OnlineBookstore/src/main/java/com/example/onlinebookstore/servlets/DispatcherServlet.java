@@ -1,15 +1,17 @@
 package com.example.onlinebookstore.servlets;
 
+import java.io.IOException;
+
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.RequestDispatcher;
-import java.io.IOException;
 
 @WebServlet("/*")
 public class DispatcherServlet extends HttpServlet {
+
     private static final long serialVersionUID = 1L;
 
     @Override
@@ -17,7 +19,7 @@ public class DispatcherServlet extends HttpServlet {
         String uri = request.getRequestURI();
         RequestDispatcher dispatcher = null;
 
-        if (uri.endsWith("/bookRegistration.html")) {
+        if (uri.endsWith("/registerBookhtml")) {
             dispatcher = request.getRequestDispatcher("/bookRegistration.html");
         } else if (uri.endsWith("/displayBooks.html")) {
             dispatcher = request.getRequestDispatcher("/displayBooks.html");
