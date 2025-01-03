@@ -1,0 +1,56 @@
+<servlet>
+    <servlet-name>BookRegistrationServlet</servlet-name>
+    <servlet-class>com.example.onlinebookstore.servlets.BookRegistrationServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>BookRegistrationServlet</servlet-name>
+    <url-pattern>/registerBook</url-pattern>
+</servlet-mapping>
+<servlet>
+    <servlet-name>DisplayBooksServlet</servlet-name>
+    <servlet-class>com.example.onlinebookstore.servlets.DisplayBooksServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>DisplayBooksServlet</servlet-name>
+    <url-pattern>/displayBooks</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>DeleteBookServlet</servlet-name>
+    <servlet-class>com.example.onlinebookstore.servlets.DeleteBookServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>DeleteBookServlet</servlet-name>
+    <url-pattern>/deleteBook</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>SearchBooksServlet</servlet-name>
+    <servlet-class>com.example.onlinebookstore.servlets.SearchBooksServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>SearchBooksServlet</servlet-name>
+    <url-pattern>/searchBooks</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>DispatcherServlet</servlet-name>
+    <servlet-class>com.example.onlinebookstore.servlets.DispatcherServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>DispatcherServlet</servlet-name>
+    <url-pattern>/*</url-pattern>
+</servlet-mapping>
+
+<listener>
+    <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+</listener>
+
+<context-param>
+    <param-name>contextConfigLocation</param-name>
+    <param-value>/WEB-INF/applicationContext.xml</param-value>
+</context-param>
+
+
+
+
